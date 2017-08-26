@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+ <html>
+   <head> 
+        <title>User Page </title>
+        <meta charset="UTF-8">
+      <!-- background:#d6dbdf;   -->
+      <style> 
+        .alignment
+        {
+         background:transparent;
+         max-width:980px;
+	margin:0 auto;
+	border-width:0px;
+	
+	-webkit-box-shadow: 1px 1px 10px 5px rgba(192, 192, 192, 0.53);
+	-moz-box-shadow:    1px 1px 10px 5px rgba(192, 192, 192, 0.53);
+	box-shadow:         1px 1px 10px 5px rgba(192, 192, 192, 0.53);
+        }
+         body 
+        {
+          text-align:center;
+          background-image:url("data:image/jpeg;base64,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");
+        background-repeat:no-repeat;
+        background-size:1400px 700px;
+
+          background-attachment:fixed;
+          font-size:18px;
+        }
+          h1 
+         {
+           font-family:Helvetica;
+           color:#4B0082;
+           text-align:center;
+         }
+          h2
+          {
+           color:#C71585;
+           font-size:19px;
+           font-family:Verdana;
+          
+          }
+         p
+          {
+            text-align:justify;
+          }
+        h2
+          {
+            color:#008080;
+          }
+       figcaption
+           {
+             font-family:Cursive;
+             color:#FF0000;
+             
+            }
+      .achievements
+           {
+            color:#FFA500;
+           }
+        
+       #container1
+           {
+             margin: 0 auto;
+             width:90%;
+            background-color:white;
+            border:solid 1px #ffffe0;
+            } 
+       #container2
+           {
+             margin: 0 auto;
+             width:90%;
+           background-color:white;
+           border: solid 2px #ffffe0;
+
+            } 
+     .class1
+           {margin: 0 auto;
+             width:90%;
+             
+             text-align:center;
+            } 
+      .container3
+           {margin: 0 auto;
+             width:90%;
+             
+             text-align:center;
+            } 
+       q 
+          {
+            text-align:center;
+            font-style:italic;
+            color:#FF4500;
+            font-size:20px;
+       }
+      #self
+        {
+          text-align:center;
+          color:white;
+          font-family:verdana;
+          
+          background-color:black;
+          
+        }
+      p
+        {
+          font-family:Times;
+        }
+      .class2
+        {
+           text-align:left;
+          }
+       .class3
+        {
+          text-align:center;
+         }
+        a
+       {
+         color:#3498db;
+       }
+     a:hover
+      { 
+        color:red;
+   }
+    #name
+      {
+       font-style:oblique;
+       color:yellow;
+      }     
+  </style> 
+   </head> <!-- end of head -->
+   
+   <body>
+    <div class="alignment">
+     <header> <!-- header starts -->
+   <br>
+    
+         <h1>My autobiography</h1>
+       </header>
+   
+      <h2>This is B.V.N.S.Sai Vineetha and this is  autobiography. </h2>
+
+  
+    <h3>Early life and education </h3>
+   <div id="container1">
+    
+   <div class="class1">
+  
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;
+       
+        I was born in Kavali,Nellore district to B.L.Shankar Prasad and B.Vijaya Lakshmi.I have a brother, B.E.V.N.M.Sai Asrith.I finished my schooling from Narayana .I am currently pursuing my B.Tech from Indian Institue Of Information Technology,Tiruchirapalli.
+       My aim actually was to become a doctor.But due to some circumstances I landed in engineeering.My aim is to become a professor and an admired web developer cum designer and hacker.
+    </p>
+    </div> <!-- class1 end -->
+
+  </div> <!-- container1 id  end-->
+  <br>
+    
+  <br>
+<br>
+    <figure>
+      <img src="?C:\Users\LENOVO\Pictures\img.jpg" alt="Sai Vineetha">
+     
+<br>
+      <figcaption>Sai Vineetha</figcaption>
+    </figure> <!-- end of figure tag -->
+ 
+<h3>Hobbies </h3>
+    <div id="container2">
+     
+    <div class="class1">
+     <p> &nbsp;&nbsp;&nbsp;&nbsp;
+    I generally like to read books related to mysteries,science fiction,fantasy,historical,religious,spiritual and even epics.I like to play chess and shuttle,know more about emerging technology,create web pages,create blog posts etc.
+   </p>
+     <p> &nbsp;&nbsp;&nbsp;&nbsp;
+   
+    I have done few projects related to web development,content writing,Java development etc
+     </p> 
+    </div> <!-- class1 end -->
+  </div> <!-- container2 id  end -->
+  
+   <footer>
+      <p id="self"> Written & coded by <a id="name" href="# ">B.V.N.S.Sai Vineetha.</a></p> 
+   </footer> <!-- end of footer -->
+<br>
+   </div> <!-- alignment class -->
+ <script type="text/javascript">
+  document.getElementById("name").onclick=
+  function()
+ {
+ window.alert("Oops! You cannot join me on any social media");
+ }
+ </script>
+   </body>
+ </html>
